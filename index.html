@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #div1{
+    background-color:#bf8080 ;
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: center;
+    padding: 10px;
+    margin-top: 125px;
+}
+
+button{
+   padding: 10px;
+}
+
+body{
+    background-color: #b8a78f;
+}
+        </style>
+    </head>
+    <body>
+        <div id="div1">
+            <br><br>
+        <h2>random password generator</h2>
+        <p id="p1"></p>
+        <button onclick="randomString()">Generate Random Password</button>
+        <br><br><br>
+        </div>
+        <script>
+            function randomString(){
+let theArray = ["Yhsai!232Jh", "KJ3@!HsuhJ", "AkIsa!^78", "JAK3jS"];
+let randomGen = Math.floor(Math.random() * theArray.length);
+let randomElement = theArray[randomGen];
+   document.getElementById("p1").innerHTML = " Strong Password: "+ randomElement
+            }
+        </script>
+    </body>
+</html>
